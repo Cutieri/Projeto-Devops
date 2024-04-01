@@ -48,4 +48,4 @@ http://localhost:8000
 
 ## Autores
 
-Este projeto foi desenvolvido por Matheus Scafuro de Andrade - 2301809 / Victor Tavares Minuceli - 2301886 / Joao Vyctor Oliveira Dias - 2301747 / Guilherme Ferreira Cutieri 2301592 / Gustavo Alencar Farrath - 2300493 e Pedro Alencar Farrath - 2300266.
+Este projeto foi desenvolvido por Matheus Scafuro de Andrade - 2301809 / Victor Tavares Minuceli - 2301886 / Joao Vyctor Oliveira Dias - 2301747 / Guilherme Ferreira Cutieri 2301592 / Gustavo Alencar Farrath - 2300493 / Pedro Alencar Farrath - 2300266 / Lucas figueiredo venturelli - 2300845 e Lucas Mendonça da Silva 2301508.
