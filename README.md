@@ -46,10 +46,6 @@ python logicgames.py
 http://localhost:8000
 ```
 
-## Contribuição
-
-Contribuições são bem-vindas! Caso deseje contribuir com o projeto, sinta-se à vontade para abrir um pull request ou reportar problemas na seção de issues.
-
 ## Autores
 
 Este projeto foi desenvolvido por Matheus Scafuro de Andrade - 2301809 / Victor Tavares Minuceli - 2301886 / Joao Vyctor Oliveira Dias - 2301747 / Guilherme Ferreira Cutieri 2301592 / Gustavo Alencar Farrath - 2300493 e Pedro Alencar Farrath - 2300266.
