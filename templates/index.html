@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Inventário de Servidores</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Gerenciamento de Inventário de Servidores</h1>    
+    <form action="/add_server" method="post">
+        <label for="nome">Nome do Servidor:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        
+        <label for="endereco_ip">Endereço IP:</label>
+        <input type="text" id="endereco_ip" name="endereco_ip" required><br>
+        
+        <label for="sistema_operacional">Sistema Operacional:</label>
+        <input type="text" id="sistema_operacional" name="sistema_operacional"><br>
+        
+        <label for="especificacoes_hardware">Especificações de Hardware:</label>
+        <input type="text" id="especificacoes_hardware" name="especificacoes_hardware"><br>
+        
+        <input type="submit" value="Adicionar Servidor">
+    </form>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço IP</th>
+            <th>Sistema Operacional</th>
+            <th>Especificações de Hardware</th>
+            <th>Ações</th>
+        </tr>
+        {% for server in servers %}
+        <tr>
+            <td>{{ server[1] }}</td>
+            <td>{{ server[2] }}</td>
+            <td>{{ server[3] }}</td>
+            <td>{{ server[4] }}</td>
+            <td class="btn-group">
+                <form action="/update_server" method="post">
+                    <input type="hidden" name="server_id" value="{{ server[0] }}">
+                    <button type="submit">Atualizar</button>
+                </form>
+                <form action="/remove_server" method="post">
+                    <input type="hidden" name="server_id" value="{{ server[0] }}">
+                    <button type="submit">Remover</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
